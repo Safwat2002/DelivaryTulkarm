@@ -1,0 +1,132 @@
+<?php
+include ("connection.php");
+if(isset($_POST['sub'])){
+    $fname=$_POST['fname'];
+    $lname=$_POST['lname'];
+    $email=$_POST['email'];
+    $remail=$_POST['semail'];
+    $password=$_POST['password'];
+    $repassword=$_POST['spassword'];
+    $slqset="set names 'utf8'";
+    mysqli_query($con,$slqset);
+    $sqladd="insert into reg (fname,lname,email,remail,password,rpassword) VALUES ('$fname','$lname','$email','$remail','$password','$repassword')";
+    mysqli_query($con,$sqladd);
+
+}
+?>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <title>Delivery Tulkarem</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="project style.css" />
+  <link rel="icon" href="3.jpg">
+
+</head>
+
+<body class="safwatsss">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#safwat"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Delivery<span style="color: red"> Tulkarem</span></a>
+
+
+      </div>
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="safwat">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="pp2.html">تسجيل الدخول </a></li>
+          <li><a href="pp12.html">حول </a></li>
+          <li><a href="pp11.html">اتصل بنا</a></li>
+          <li><a href="pp13.html">الوجبات</a></li>
+          <li><a href="index.html">الرئيسية </a></li>
+        </ul>
+
+        <form style="align-items: center" class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="بحث">
+          </div>
+
+        </form>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div
+        class="col-xs-8 col-sm-6 col-md-4 col-lg-4 col-xs-offset-2 col-sm-offset-3  col-md-offset-4 col-lg-offset-4 safwatssss">
+        <h1 style="color: darkgrey;text-align: center"> التسجيل</h1>
+
+
+        <form role="form" method="post">
+
+          <input type="text" placeholder="الإسم الأول " class="form-control" required name="fname">
+          <br>
+          <input type="text" placeholder="الإسم الأخير" class="form-control" required name="lname">
+          <br>
+          <input type="email" placeholder="البريد الإلكتروني" class="form-control" required name="email">
+          <br>
+          <input type="email" placeholder=" تأكيد البريد الإلكتروني" class="form-control" required name="semail">
+          <br>
+          <input type="password" placeholder="كلمة السر" class="form-control" required name="password">
+          <br>
+          <input type="password" placeholder="تأكيد كلمة السر" class="form-control" required name="spassword">
+          <br>
+
+          <input type="submit" placeholder="التالي>>" value="التالي" class="form-control"
+            style="padding-right: 50;padding-left: 50" name="sub">
+          <br>
+          <p style="text-align: center;color: blue">جميع الحقول العلوية مطلوبة * </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div style="text-align: center;background-color: black">
+    <footer>
+
+      Designed By Ali Naipha
+      Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; جميع
+      الحقوق محفوظة لدى &nbsp; &copy; Go Code Tulkareem
+
+    </footer>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

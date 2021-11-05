@@ -1,0 +1,172 @@
+#safwat3
+{
+border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    background-color: red;
+    font-size:30px;     
+}
+
+.safwatt
+{
+    background-color: aqua;
+    padding: 150px 10px 195px 10px
+}
+
+.safwatss
+{
+    background-image: url('25.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 150px
+}
+
+.safwatff
+{
+    background-color: aqua;
+  padding:222px 0px 300px 0px
+}
+
+.shawkat
+{
+    background-color: aqua;
+    padding: 150px 0px 100px 0px;
+    font-size: 100px;
+}
+
+
+.safwatsss
+{
+    background-color: burlywood;
+    padding-top: 100px;
+}
+
+.safwatssss
+{
+    padding-bottom: 100px
+    
+}
+.safwatd
+{
+    padding-top: 70px
+}
+
+
+
+
+
+
+
+.navbar-inverse .navbar-nav>li>a
+{
+    font-size: 25px
+}
+
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand
+{
+    color:bisque;
+    font-size: 30px
+}
+
+
+
+P
+{
+    text-align: right;font-size: 18px;
+    font-family: arial;
+    
+    
+}
+
+
+
+h5
+{
+    text-align: right;font-size: 25px;color: red;
+    font-family: arial;
+}
+
+
+.dropdown-menu
+{
+    background-color: black;
+    border-top: 3px solid red
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+{
+    background-color: red;
+    color: #fff;
+    padding-left: 30px
+}
+
+.dropdown.menu > li > a
+{
+    color:#fff;
+    
+        padding: 6px 20px;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+
+}
+
+
+.safwat{
+    background:rgba(3,3,3,0.10);
+    padding-right:20px;
+    
+}
+
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover
+
+{
+    background-color: red
+}
+
+
+.carousel-indicators li
+{
+    height: 20px;
+    width: 20px
+}
+
+
+
+.carousel-indicators .active
+{
+    height: 24px;
+    width: 25px;
+    background-color: red;
+    padding-right: 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
